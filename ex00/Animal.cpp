@@ -2,7 +2,7 @@
 
 Animal::Animal(void){std::cout << "Default constructor Animal called\n";}
 
-Animal::~Animal(){std::cout << "Anima destructor called\n";}
+Animal::~Animal(){std::cout << "Animal destructor called\n";}
 
 Animal::Animal(std::string type) : _type(type)
 {
@@ -27,5 +27,5 @@ std::string Animal::getType(void) const {return _type;}
 
 void    Animal::makeSound(void) const
 {
-    std::cout << "..." << std::endl; 
+    std::cout << "tu puta madre" << std::endl; 
 }

@@ -3,7 +3,7 @@
 
 #include "Animal.hpp"
 
-class Dog : virtual Animal
+class Dog : public Animal
 {
 
 public:
@@ -13,7 +13,7 @@ public:
     ~Dog();
 
     Dog  &operator=(const Dog &copy);
-    virtual void makeSound(void) const;
+    void makeSound(void) const;
 };
 
 
