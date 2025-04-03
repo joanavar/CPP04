@@ -17,7 +17,7 @@ public:
     ~Cat();
 
     Cat  &operator=(const Cat &copy);
-    virtual void makeSound(void) const;
+    virtual void makeSound(void) const override;
 
 };
 
