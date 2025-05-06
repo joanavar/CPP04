@@ -27,6 +27,6 @@ AMateria &AMateria::operator=(AMateria const &copy)
 /*
 * Mandatory member functions
  */
-std::string const &AMateria::getType(void) const { return _type; }
+std::string const &AMateria::getType(void) const {   return _type; }
 
 void AMateria::use(ICharacter& target) { (void)target; }

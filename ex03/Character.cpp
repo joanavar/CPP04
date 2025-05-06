@@ -3,10 +3,10 @@
 #include "ICharacter.hpp"
 #include "colors.hpp"
 
-Character::Character(void) : name("Default"), size(0)
+Character::Character(void) : _name("Default"), _size(0)
 {
     for (int i = 0; i < 4; i++)
-        _inventory[i] + NULL;
+        _inventory[i] = NULL;
 }
 Character::Character(std::string const &name) : _name(name), _size(0) 
 {

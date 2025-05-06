@@ -10,13 +10,28 @@
 int main()
 {
 IMateriaSource* src = new MateriaSource();
+std::cout<<"hola\n";
 src->learnMateria(new Ice());
+std::cout<<"hola\n";
+
 src->learnMateria(new Cure());
+std::cout<<"hola\n";
+
 ICharacter* me = new Character("me");
+std::cout<<"hola\n";
+
 AMateria* tmp;
-tmp = src->createMateria("ice");
+std::cout<<"hola\n";
+
+tmp = src->createMateria("Ice");
+std::cout<<"hola\n";
+
 me->equip(tmp);
-tmp = src->createMateria("cure");
+std::cout<<"hol2\n";
+
+tmp = src->createMateria("Cure");
+std::cout<<"hola\n";
+
 me->equip(tmp);
 ICharacter* bob = new Character("bob");
 me->use(0, *bob);

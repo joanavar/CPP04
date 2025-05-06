@@ -4,7 +4,7 @@
 /*
 * Constructors
  */
-Ice::Ice(void) : AMateria("ice") {}
+Ice::Ice(void) : AMateria("Ice") {}
 
 Ice::Ice(std::string const &type) : AMateria(type) {}
 
