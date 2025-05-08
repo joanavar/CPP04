@@ -27,5 +27,5 @@ std::string Animal::getType(void) const {return _type;}
 
 void    Animal::makeSound(void) const
 {
-    std::cout << "tu puta madre" << std::endl; 
+    std::cout << "..." << std::endl; 
 }

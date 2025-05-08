@@ -1,7 +1,7 @@
 #include "AMateria.hpp"
 #include "Character.hpp"
 #include "ICharacter.hpp"
-#include "colors.hpp"
+#include "Colors.hpp"
 
 Character::Character(void) : _name("Default"), _size(0)
 {
@@ -84,7 +84,10 @@ void Character::unequip(int idx) {
 }
 
 void Character::use(int idx, ICharacter &target) {
- if (idx >= 4 || !_inventory[idx]) { return; } 
+ if (idx >= 4 || !_inventory[idx]) { 
+    std::cout << "hoa\n";
+    return; }
+//std::cout << "use\n ";
  _inventory[idx]->use(target);
 }
 

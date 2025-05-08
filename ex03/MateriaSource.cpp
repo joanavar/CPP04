@@ -53,13 +53,10 @@ void MateriaSource::learnMateria(AMateria *materia)
 }
 
 AMateria* MateriaSource::createMateria(std::string const &type){
-  std::cout<<"hola\n";
 
     for (int i = 0; i < this->_size; i++)
     {
-      std::cout<<"hol\n";
-
-      std::cout <<_array[i]->getType()<< std::endl;
+      //std::cout <<_array[i]->getType()<< std::endl;
         if (_array[i]->getType().compare(type) == 0){
             return _array[i]->clone();
         }

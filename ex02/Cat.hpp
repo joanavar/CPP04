@@ -17,7 +17,11 @@ public:
     ~Cat();
 
     Cat  &operator=(const Cat &copy);
-    virtual void makeSound(void) const override;
+    void makeSound(void) const override;
+
+    void setIdea(std::string idea);
+	void getIdea(void) const; 
+	void getIdea(int nbIdea) const; 
 
 };
 

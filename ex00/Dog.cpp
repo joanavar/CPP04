@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 
-Dog::Dog(void) : Animal("Dog"){ std::cout << "Default constructor Dog called\n";}
+Dog::Dog(void) : Animal("Dog"){ std::cout << "Dog Default constructor Dog called\n";}
 
 Dog::~Dog() {std::cout << "Dog destructor called\n";}
 

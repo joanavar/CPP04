@@ -29,4 +29,7 @@ AMateria &AMateria::operator=(AMateria const &copy)
  */
 std::string const &AMateria::getType(void) const {   return _type; }
 
-void AMateria::use(ICharacter& target) { (void)target; }
+void AMateria::use(ICharacter& target) { 
+    
+    std::cout << "hola\n";
+    (void)target; }

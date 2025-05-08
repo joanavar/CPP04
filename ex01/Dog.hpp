@@ -17,6 +17,10 @@ public:
 
     Dog  &operator=(const Dog &copy);
     void makeSound(void) const;
+    
+    void setIdea(std::string idea);
+	void getIdea(void) const; 
+	void getIdea(int nbIdea) const; 
 };
 
 

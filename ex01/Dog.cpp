@@ -32,3 +32,27 @@ Dog	&Dog::operator=(const Dog &copy)
 }
 
 void	Dog::makeSound(void) const {std::cout << "Guau!!\n";}
+
+void Dog::setIdea(std::string idea) {
+	if (!brain) {
+		std::cout << "Error " << _type << " has no brain" << std::endl;
+		return ;
+	}
+	brain->setIdea(idea);
+}
+
+void Dog::getIdea(void) const {
+	if (!brain) {
+		std::cout << "Error " << _type << " has no brain" << std::endl;
+		return ;
+	}
+	brain->getIdea();
+}
+
+void Dog::getIdea(int nbIdea) const {
+	if (!brain) {
+		std::cout << "Error " << _type << " has no brain" << std::endl;
+		return ;
+	}
+	brain->getIdea(nbIdea);
+}
